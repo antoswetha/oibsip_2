@@ -1,0 +1,177 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3aByRpQqcQthhQ-A3hOzDnjweNchi-umrpXLrcR4hWa0sEs7kGQuoBPwwoa0SjD5-ZvY&usqp=CAU);
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+}
+
+.image {
+    mask-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWn2sp2NUkZR0AptuK06ny_0K7xCZ3utzxQ&usqp=CAU);
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    position: fixed;
+    opacity: 0.5;
+
+}
+
+.profile-img {
+    top: 1%;
+    width: 27%;
+    position: fixed;
+    clip-path: circle(30%);
+    transition: clip-path 1s;
+    color: #000000;
+}
+
+.profile-img:hover {
+    clip-path: circle(40%);
+}
+
+.profile p {
+    color: #000000;
+    top: 5%;
+    left: 40%;
+    position: absolute;
+    font-size: 315%;
+}
+.profile span {
+    color: #000000;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    font-size: 180%;
+}
+.profile {
+    position: absolute;
+    background-image: radial-gradient(circle, rgb(216, 215, 215), rgb(67, 67, 67), rgb(0, 0, 0));
+    background-repeat: inherit;
+    height: 200px;
+    width: 100%;
+}
+
+.skills {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    bottom: 20%;
+    background-color: rgb(145, 162, 177);
+    width: 640px;
+    height: 600px;
+    color: black;
+}
+
+.skills text {
+    position: absolute;
+    font-size: 40;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: dash 5s linear forwards, filling 4s ease-in forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes filling {
+    from {
+        fill: #000000;
+        fill-opacity: 0;
+    }
+
+    to {
+        fill: #000000;
+        fill-opacity: 1;
+    }
+}
+
+.bar {
+    position: relative;
+
+    border: 2px solid #000000;
+    margin-bottom: 50px;
+    border-radius: 20px;
+
+}
+
+.bar div {
+    position: relative;
+    height: 10%;
+    width: 0;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #1c1c1c;
+    border-width: 50px;
+
+}
+
+#html-bar {
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+#css-bar {
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+#js-bar {
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill {
+    100% {
+        width: 72%;
+    }
+}
+
+#python-bar {
+    animation: python-fill 2s forwards;
+}
+
+@keyframes python-fill {
+    100% {
+        width: 58%;
+    }
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-in {
+    position: inherit;
+    left: 10%;
+    top: 20%;
+    width: 500;
+    height: 80%;
+    font-size: 25;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.skills {
+    background: linear-gradient(white, rgb(66, 65, 65));
+}
+
+.skills i {
+    bottom: 0;
+    font-size: 450px;
+    color: #000000;
+}
+
